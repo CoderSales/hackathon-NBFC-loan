@@ -137,3 +137,6 @@ dmypy.json
 # 1.2 Data files (not committed already)
 notebooks/*/*.csv
 notebooks/*/*
+
+# 1.3 Data files (not committed already) (xlsx)
+data/*.xlsx
