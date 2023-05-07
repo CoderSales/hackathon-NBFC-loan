@@ -4,9 +4,18 @@ import pandas as pd
 # https://stackoverflow.com/questions/50767663/global-dataframe-across-files-in-a-project
 
 # def init():
+data = pd.read_csv('../data/Train_set.csv')
+col_list = data.columns
+for col in data.columns:
+    print(data[col].head(2))
 
 # def isna_checker(data=data, col=col):
-def isna_checker(data=data,col=col,*args,**kwargs):
+def col_looper():
+    for col in data.columns:
+        print(data[col].head(2))
+        isna_checker(data=data, col=col)
+
+def isna_checker(data=data,col=col):
     """
     function to check if the count in each col of data is 0. 
     """
@@ -14,8 +23,8 @@ def isna_checker(data=data,col=col,*args,**kwargs):
     # GDF=pd.DataFrame()
     data = pd.read_csv('../data/Train_set.csv')
     df = data.copy()
-    dc=data[col]
     for col in data.columns:
+        dc=data[col]
         print(data[col].head(2))
     df_isna=df.isna().sum() # full dataframe
     found_na=False
