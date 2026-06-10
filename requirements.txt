@@ -104,6 +104,6 @@ webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.5.1
 widgetsnbextension==4.0.7
-xlwings==0.30.5
+xlwings==0.36.4
 yellowbrick==1.5
 zipp==3.19.1
