@@ -69,7 +69,7 @@ psutil==7.2.2
 pure-eval==0.2.3
 pycparser==2.21
 Pygments==2.15.1
-pyparsing==3.0.9
+pyparsing==3.3.2
 pyrsistent==0.19.3
 pytesseract==0.3.10
 python-dateutil==2.9.0.post0
